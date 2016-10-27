@@ -1,15 +1,15 @@
-'use strict';
+'use strict'
 
-var path = require('path');
-var HtmlWebpackPlugin = require('html-webpack-plugin');
+var path = require('path')
+var HtmlWebpackPlugin = require('html-webpack-plugin')
 
 var plugins = [
   new HtmlWebpackPlugin({
-    title: "We are awesome!!",
+    title: 'We are awesome!!',
     inject: false,
     template: path.resolve(__dirname, 'index.html')
   })
-];
+]
 
 module.exports = {
   devtool: 'source-map',
@@ -38,4 +38,4 @@ module.exports = {
       index: '/app/index.html'
     }
   }
-};
+}
